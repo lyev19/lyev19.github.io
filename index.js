@@ -16,7 +16,9 @@ const cardContainer = document.querySelectorAll(".card-container")
 cardManager(cardContainer);
 let fetches = JSON.parse(localStorage.getItem("data"))
 document.onload= a()
-
+window.addEventListener("storage", ()=>{
+    a()
+})
 
 
 async function a(){
